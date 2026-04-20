@@ -6,7 +6,6 @@ def listar_tarefas(request):
     tarefas = Tarefa.objects.all().values()
     return JsonResponse(list(tarefas), safe=False)
 
-
 def tarefas_urgente(request, prioridade):
     prioridade_upper = prioridade.upper()
     tarefas = Tarefa.objects.filter(prioridade=prioridade_upper).values()
