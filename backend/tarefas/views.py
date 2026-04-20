@@ -18,6 +18,7 @@ def buscar_tarefa(request, id):
             'id': tarefa.id,
             'titulo': tarefa.titulo,
             'descricao': tarefa.descricao,
+            'usuario_responsavel': tarefa.usuario_responsavel.nome,
             'status': tarefa.status,
             'prioridade': tarefa.prioridade,
             'data_entrega': str(tarefa.data_entrega),
