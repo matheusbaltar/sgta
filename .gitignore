@@ -25,6 +25,6 @@ Thumbs.db
 
 # Logs
 *.log
-dados.json
 
 .claude
+dados.json
